@@ -17,7 +17,7 @@ if you're happy and you know it, star this repo
 
 ### A dev blog starter for 2020.
 
-- Works as a Markdown-based static-site generator out of the box: just add new blog posts to `/md/blog`
+- Works as a Markdown-based static-site generator out of the box: justs add new blog posts to `/md/blog`
 - Supports exporting to fully static assets (powered by Next.js)
 - Hot reload (powered by Next.js)
 - Makes it easy to write custom pages/code in React + TypeScript
