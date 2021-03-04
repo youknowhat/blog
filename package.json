@@ -1,31 +1,17 @@
 {
-  "name": "devii",
+  "name": "blog",
   "version": "0.5.0",
-  "description": "A Medium inspired dev blog starter for Next.js",
+  "description": "Jeffrey in your area",
   "repository": {
     "type": "git",
-    "url": "https://github.com/colinhacks/devii"
+    "url": "https://github.com/youknowhat/blog"
   },
-  "author": "Colin McDonnell <colin@colinhacks.com>",
+  "author": "Jeffrey",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/colinhacks/devii/issues"
+    "url": "https://github.com/youknowhat/blog/issues"
   },
   "homepage": "https://github.com/colinhacks/devii",
-  "tags": [
-    "blog template",
-    "react",
-    "nextjs",
-    "syntax highlighting",
-    "static generation"
-  ],
-  "keywords": [
-    "blog template",
-    "react",
-    "nextjs",
-    "syntax highlighting",
-    "static generation"
-  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
