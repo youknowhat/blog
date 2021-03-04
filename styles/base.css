@@ -32,8 +32,8 @@ h5,
 h6 {
   font-weight: 700;
   line-height: 1.6;
-  margin-bottom: 0.5em;
-  margin-top: 1em;
+  margin-bottom: 0;
+  margin-top: 1.5em;
   text-align: left;
 }
 
@@ -65,12 +65,12 @@ p {
 }
 
 blockquote {
-  border-left: 5px solid turquoise;
-  padding: 15px 0px 15px 15px;
+  border-left: 5px solid #0c451c;
+  padding: 16px 0px 16px 16px;
   background-color: #f4f4f4;
   border-radius: 4px;
   width: 100%;
-  max-width: 550px;
+  max-width: 768px;
   margin: 0.4em 0px;
 }
 
@@ -94,22 +94,22 @@ ol p {
 }
 
 a {
-  color: turquoise;
+  color: #0c451c;
 }
 
 a:hover {
-  color: #c00;
+  color: #0c451c;
 }
 
 a:visited {
-  color: purple;
+  color: #999;
 }
 
 /* page sections */
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   min-height: 100vh;
 }
@@ -133,21 +133,21 @@ a:visited {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: turquoise;
+  background-color: #0c451c;
   color: white;
 }
 
 .header a,
 .footer a {
   color: #fff;
-  padding: 15px;
+  padding:16px;
   text-decoration: none;
 }
 
 .header p,
 .footer p {
   margin: 0;
-  padding: 15px;
+  padding: 16px;
 }
 
 .section {
@@ -159,7 +159,7 @@ a:visited {
 }
 
 .section .narrow {
-  max-width: 550px;
+  max-width: 768px;
 }
 
 .section h1,
@@ -170,18 +170,18 @@ a:visited {
 .section h6,
 .section p {
   width: 100%;
-  max-width: 550px;
+  max-width: 768px;
 }
 
 .medium-wide {
-  max-width: 550px;
+  max-width: 768px;
 }
 
 hr {
   height: 1px;
   color: #eee;
   opacity: 0.2;
-  margin: 15px 0px;
+  margin: 16px 0px;
 }
 
 /* utilities */
@@ -199,12 +199,12 @@ hr {
 
 /* page areas */
 .introduction {
-  max-width: 550px;
+  max-width: 768px;
   margin: auto;
 }
 
 .fork-button {
-  background-color: turquoise;
+  background-color: #0c451c;
   border-radius: 10px;
   border: none;
   color: white;
@@ -213,12 +213,12 @@ hr {
   cursor: pointer;
 }
 .fork-button:hover {
-  background-color: mediumturquoise;
+  background-color: #0c451c;
 }
 
 .author-container {
   width: 100%;
-  max-width: 550px;
+  max-width: 768px;
   margin: 0px;
   padding: 0px;
 }
@@ -267,8 +267,8 @@ hr {
 
 .blog-post-title {
   width: 100%;
-  max-width: 550px;
-  margin-bottom: 15px;
+  max-width: 768px;
+  margin-bottom: 16px;
   padding: 40px 10px;
 }
 
@@ -290,16 +290,16 @@ hr {
 
 .blog-post-content {
   width: 100%;
-  max-width: 550px;
+  max-width: 768px;
   padding: 0px 10px;
 }
 
 .follow-button {
   display: inline-block;
-  border: 1px solid turquoise;
+  border: 1px solid #0c451c;
   border-radius: 4px;
   padding: 2px 10px;
-  color: turquoise;
+  color: #0c451c;
   font-size: 10pt;
   margin-bottom: 2px;
   margin-left: 4px;
@@ -317,11 +317,11 @@ hr {
 
 .post-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-row-gap: 8px;
-  grid-column-gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+  grid-row-gap: 40px;
+  grid-column-gap: 40px;
   width: 100%;
-  padding: 15px 30px;
+  padding: 16px 0;
 }
 
 .post-card {
@@ -354,7 +354,7 @@ hr {
 }
 
 .post-card-title {
-  padding: 15px 10px;
+  padding: 16px 10px;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #00000020;
