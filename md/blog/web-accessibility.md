@@ -3,10 +3,11 @@ title: 웹 접근성 개선
 published: true
 datePublished: 1594425078471
 author: Jeffrey
+bannerPhoto: https://jeffarea.site/img/web-accessibility.jpg
 tags:
   - 접근성
-authorPhoto: /img/profile.png
-thumbnailPhoto: /img/web-accessibility.jpg
+authorPhoto: https://jeffarea.site/img/profile.png
+thumbnailPhoto: https://jeffarea.site/img/web-accessibility.jpg
 ---
 
 웹 접근성 개선을 진행했던 경험을 공유합니다.

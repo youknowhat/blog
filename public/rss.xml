@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jeffrey in your area]]></title><description><![CDATA[I write about code 'n stuff]]></description><link>https://github.com/youknowhat</link><image><url>https://github.com/youknowhat/icon.png</url><title>Jeffrey in your area</title><link>https://github.com/youknowhat</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 04 Mar 2021 13:56:59 GMT</lastBuildDate><atom:link href="https://github.com/youknowhat/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 03 Mar 2020 04:00:00 GMT</pubDate><copyright><![CDATA[2021 Jeffrey]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[junghyun.de@gmail.com]]></managingEditor><webMaster><![CDATA[junghyun.de@gmail.com]]></webMaster><ttl>60</ttl><item><title><![CDATA[웹 접근성 개선]]></title><description><![CDATA[<p>웹 접근성 개선을 진행했던 경험을 공유합니다.</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jeffrey in your area]]></title><description><![CDATA[Jeffrey가 운영하는 기술 블로그라고 볼 수 있습니다.]]></description><link>https://github.com/youknowhat</link><image><url>https://github.com/youknowhat/icon.png</url><title>Jeffrey in your area</title><link>https://github.com/youknowhat</link></image><generator>RSS for Node</generator><lastBuildDate>Mon, 15 Mar 2021 14:32:20 GMT</lastBuildDate><atom:link href="https://github.com/youknowhat/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 03 Mar 2020 04:00:00 GMT</pubDate><copyright><![CDATA[2021 Jeffrey]]></copyright><language><![CDATA[en]]></language><managingEditor><![CDATA[junghyun.de@gmail.com]]></managingEditor><webMaster><![CDATA[junghyun.de@gmail.com]]></webMaster><ttl>60</ttl><item><title><![CDATA[웹 접근성 개선]]></title><description><![CDATA[<p>웹 접근성 개선을 진행했던 경험을 공유합니다.</p>
 <p>웹 접근성을 개선한다는 것은 장애인 접근성을 보장할 수 있도록 웹 콘텐츠 접근성 지침을&nbsp;적용하는 것.</p>
 <blockquote>
   <p><strong>웹 접근성 4원칙</strong> <br /></p>
@@ -69,7 +69,7 @@
 </code></pre>
 <blockquote>
   <p><strong>tabindex</strong> <br/>
-  순서를 설정하는 HTML 속성입니다. 초점을 받을 수 없는 요소를 인식할 필요가 있을 때 사용합니다. 탭 키 또는 focus() 메서드를 호출하는 방식으로 요소에 초점을 제공할 수 있습니다.
+  순서를 설정하는 HTML 속성입니다. 초점을 받을 수 없는 요소를 인식할 필요가 있을 때 사용합니다. 탭 키 또는 <code>focus()</code> 메서드를 호출하는 방식으로 요소에 초점을 제공할 수 있습니다.
   <br /></p>
 </blockquote>
 <h3 id="212">초점 이동 (2.1.2)</h3>
@@ -78,14 +78,14 @@
 <blockquote>
   <p><strong>콘텐츠 숨기기</strong><br /></p>
   <ul>
-  <li>콘텐츠를 읽지 않고 숨김: display: none;</li>
-  <li>콘텐츠를 읽지 않고 숨김, 영역은 유지: visibility: hidden;</li>
-  <li>콘텐츠를 읽고 숨김: overflow: hidden; width: 0; height: 0;</li>
-  <li>콘텐츠를 읽고 숨김, 영역은 유지 : opacity: 0;</li>
+  <li>콘텐츠를 읽지 않고 숨김: <code>display: none;</code></li>
+  <li>콘텐츠를 읽지 않고 숨김, 영역은 유지: <code>visibility: hidden;</code></li>
+  <li>콘텐츠를 읽고 숨김: <code>overflow: hidden;</code> <code>width: 0</code>; <code>height: 0;</code></li>
+  <li>콘텐츠를 읽고 숨김, 영역은 유지 : <code>opacity: 0;</code></li>
   <li>조건에 따라 콘텐츠를 읽지 않고 숨겨야 하는 경우 스타일에 ① 속성을 적용합니다. 콘텐츠의 영역을 유지해야 하거나 애니메이션 효과가 있다면 ② 속성을 적용합니다. 반대로 콘텐츠를 숨기지만 읽어야 하는 경우 ③ 속성을 적용합니다. 콘텐츠의 영역을 유지해야 한다면 ④ 속성을 적용합니다.</li>
   </ul>
 </blockquote>
-<p>트랜지션 속성이 있는 경우 애니메이션 효과에 영향을 미치지 않도록 visibility 속성을 적용합니다.</p>
+<p>트랜지션 속성이 있는 경우 애니메이션 효과에 영향을 미치지 않도록 <code>visibility</code> 속성을 적용합니다.</p>
 <pre><code>// 변경 전
 .container {
   transition: max-height 0.35s ease-in-out;
@@ -117,12 +117,12 @@
 }
 </code></pre>
 <p><br /></p>
-<p><strong>중복 링크</strong>
-섬네일 이미지 링크와 링크 텍스트가 같은 목적지를 갖는 경우 aria-hidden="true" 속성을 적용하여 링크를 하나만 제공합니다. 반복되는 링크가 사라지기 때문에 탐색의 효율성이 증가하고 혼동을 피할 수 있습니다. </p>
+<p><strong>중복 링크</strong><br />
+섬네일 이미지 링크와 링크 텍스트가 같은 목적지를 갖는 경우 <code>aria-hidden="true"</code> 속성을 적용하여 링크를 하나만 제공합니다. 반복되는 링크가 사라지기 때문에 탐색의 효율성이 증가하고 혼동을 피할 수 있습니다. </p>
 <pre><code>&lt;div class="card"&gt;
-  &lt;a href="/web/project"&gt;
+  &lt;a class="thumbnail" href="/web/project"&gt;
   &lt;div class="info"&gt;
-    &lt;a href="/web/project"&gt;
+    &lt;a class="thumbnail" href="/web/project"&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
@@ -134,11 +134,11 @@
 &lt;/div&gt;
 </code></pre>
 <blockquote>
-  <p>링크, 버튼과 같이 초점을 받을 수 있는 요소를 aria-hidden="true" 속성으로 숨긴 경우 키보드 또는 마우스 사용자가 해당 컨트롤에 초점이 제공되어 탐색에 혼란이 있을 수 있으므로 tabindex="-1" 속성을 적용하여 컨트롤에 대한 초점을 제거해야 합니다.
+  <p>링크, 버튼과 같이 초점을 받을 수 있는 요소를 <code>aria-hidden="true"</code> 속성으로 숨긴 경우 키보드 또는 마우스 사용자가 해당 컨트롤에 초점이 제공되어 탐색에 혼란이 있을 수 있으므로 <code>tabindex="-1"</code> 속성을 적용하여 컨트롤에 대한 초점을 제거해야 합니다.
   <br /></p>
 </blockquote>
 <h3 id="243">적절한 링크 텍스트 (2.4.3)</h3>
-<p><strong>이미지 링크</strong>
+<p><strong>이미지 링크</strong><br />
 링크나 버튼 등의 컨트롤 요소에 이미지가 있는 경우 IR 기법으로 대체 텍스트를 제공합니다.</p>
 <blockquote>
   <p><strong>IR(Image Replacement) 기법</strong><br />
@@ -160,19 +160,22 @@
 </code></pre>
 <p><br /></p>
 <h3 id="341">레이블 제공 (3.4.1)</h3>
-<p><strong>시각적으로 노출되지 않은 레이블</strong></p>
-<p>입력 서식에 title 속성을 제공합니다.</p>
+<p><strong>시각적으로 노출되지 않은 레이블</strong><br />
+입력 서식에 <code>title</code> 속성을 적용합니다.</p>
 <pre><code>&lt;input type="email" placeholder="이메일 아이디" /&gt;
 </code></pre>
 <pre><code>&lt;input type="email" placeholder="이메일 아이디" title="이메일 아이디" /&gt;
 </code></pre>
 <p><br /></p>
 <h2 id="-2">결과</h2>
-<p>OpenWax 검사 결과 3개 페이지 기준 약 17% 개선하였습니다. Lighthouse 검사 결과 Accessibility 점수가 낮아진 페이지의 경우 웹 접근성에 문제가 있는 키 비주얼 콘텐츠 수 증가가 영향을 미쳤습니다. 로그인 페이지 웹 접근성 점수가 대폭 높아졌습니다.
+<h3 id="openwax">OpenWax</h3>
+<p>검사 결과 약 17% 개선되었습니다. </p>
+<h3 id="lighthouse">Lighthouse</h3>
+<p>검사 결과 Accessibility 점수가 23점 향상되었고, 로그인 페이지의 웹 접근성 점수가 대폭 높아졌습니다.
 <br /></p>
 <h2 id="-3">앞으로의 고민</h2>
 <h3 id="-4">접근성과 디자인의 경계</h3>
-<p>저시력자를 위해 웹 접근성을 보장하는 디자인을 하면 색 대비 평가 기준은 높은 점수를 받겠지만 상대적으로 취약한 디자인이 나올 수밖에 없습니다. 중요한 점은 서비스의 주 이용자가 일반적인 시력을 가진 다수자라는 데 있습니다. 따라서 소수자 중에 다수자까지 만족시키는 디자인을 목표로 합니다.</p>
+<p>저시력자를 위해 웹 접근성을 보장하는 디자인을 하면, 색 대비 평가 기준은 높은 점수를 받겠지만 상대적으로 취약한 디자인이 나올 수밖에 없습니다. 중요한 점은 서비스의 주 이용자가 일반적인 시력을 가진 다수자라는 데 있습니다. 따라서 소수자 중에 다수자까지 만족시키는 디자인이 앞으로의 목표입니다.</p>
 <p><br />
 <br />
 <br /></p>]]></description><link>https://github.com/youknowhat/blog/web-accessibility</link><guid isPermaLink="true">https://github.com/youknowhat/blog/web-accessibility</guid><category><![CDATA[접근성]]></category><dc:creator><![CDATA[Jeffrey]]></dc:creator><pubDate>Fri, 10 Jul 2020 23:51:18 GMT</pubDate></item></channel></rss>
